@@ -1,0 +1,29 @@
+from bs4 import BeautifulSoup
+import urllib.request
+import re
+
+temp = []
+
+for page_num in range(1,51):
+    
+    url = "https://movie.naver.com/movie/bi/mi/pointWriteFormList.naver?code=205027&type=after&isActualPointWriteExecute=false&isMileageSubscriptionAlready=false&isMileageSubscriptionReject=false&page={}".format(page_num)
+    html = urllib.request.urlopen(url)
+    soup = BeautifulSoup(html, 'html.parser')
+
+    if(html.status!=200):
+        break
+
+    paging = soup.find_all('div', class_ = 'score_result')
+
+
+
+    for li in paging:
+        for i in range(10):
+            temp.append(li.select_one('li > div.score_reple > p > span#_filtered_ment_{}'.format(i)).get_text().replace("\t","").replace("\r","").replace("\n","")) # 멜론 사이트에서 앨범 이름 가져와서 temp에 주가
+
+for i in range(len(temp)):
+    print("{} : ".format(i+1)+temp[i]+"\n")
+print("\n\n\n\n\n\n {}".format(page_num))
+
+
+        

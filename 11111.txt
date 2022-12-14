@@ -1,0 +1,40 @@
+sex 성별
+
+age 나이
+
+activities 과외 활동
+
+
+famsup 가족 교육 지원
+
+paid 추가 유료 수업
+
+higher 고등 교육을 받고 싶어
+
+internet 집에 인터넷 엑세스
+
+Medu 어머니의 교육 
+
+0 없음
+1 초등학교 교육 1~4
+2 초등학교 교육 5~6
+3 중학교 교육
+4 고등학교 교육
+
+Fedu 아버지의 교육
+
+studytime 학습 시간 1~10
+
+schoolsup 추가 교육 지원
+
+goout 친구와 외출
+
+G1, G2, G3, PASS
+
+
+
+
+---- 참고 ----
+
+데이터 : https://www.kaggle.com/datasets/dinhanhx/studentgradepassorfailprediction
+

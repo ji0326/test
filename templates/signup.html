@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="#">
+    <style>
+
+        .regi-page {
+        width: 360px;
+        padding: 8% 0 0;
+        margin: auto;
+        }
+        .regibox {
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+        .form input {
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        }
+        .form button {
+        text-transform: uppercase;
+        outline: 0;
+        background: #4CAF50;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        }
+        .form button:hover,.form button:active,.form button:focus {
+        background: #43A047;
+        }
+        .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+        }
+        .message a {
+        color: #4CAF50;
+        text-decoration: none;
+        }
+        .register-form {
+        display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <div class="regibox" align="center">
+        <h2>회원가입</h2>
+        <div class="regi-page" style="padding-top: 20px;">
+
+            <form class="form" method="POST" action="/register">
+                <h4>사용할 아이디 입력</h4>
+                <input type="text" id="id" name="id" placeholder="아이디"/><br>
+                <br>
+                <hr>
+                <br>
+                <h4>사용할 비밀번호 입력</h4>
+                <input type="text" id="password" name="passwd" placeholder="비밀번호"/><br>
+                <br>
+                <hr>
+                <br>
+                <h4>사용자 이름 입력</h4>
+                <input type="text" id="name" name="name" placeholder="이름"/><br>
+                <br>
+                <hr>
+                <br>
+                <h4>사용자 나이 입력</h4>
+                <input type="text" id="age" name="age" placeholder="나이"/><br>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <h4>과외 활동을 하나요?</h4>
+                    <label>예 (1)</label>
+                    <input type="radio" name="act" value="1">
+                    <label>아니요 (0)</label>
+                    <input type="radio" name="act" value="0">
+                </div><br><br><br>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <h4>가족이 교육적 지원을 해주나요?</h4>
+                    <label>예 (1)</label>
+                    <input type="radio" name="fam" value="1">
+                    <label>아니요 (0)</label>
+                    <input type="radio" name="fam" value="0">
+                </div><br><br><br>
+                <br>
+                <hr>
+                <div>
+                    <h4>인터넷 강의를 듣나요?</h4>
+                    <label>예 (1)</label>
+                    <input type="radio" name="pain" value="1">
+                    <label>아니요 (0)</label>
+                    <input type="radio" name="pain" value="0">
+                </div><br><br><br>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <h4>집에 인터넷이 있나요?</h4>
+                    <label>예 (1)</label>
+                    <input type="radio" name="inter" value="1">
+                    <label>아니요 (0)</label>
+                    <input type="radio" name="inter" value="0">
+                </div><br><br><br>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <h4>어머니에게 공부를 언제까지 배웠나요?</h4>
+                    <select name="Medu" size="3">
+                        <option value="0">0. 없음</option>
+                        <option value="1">1. 초등학교 교욱 1~4학년</option>
+                        <option value="2">2. 초등학교 교육 5~6학년</option>
+                        <option value="3">3. 중학교 교육</option>
+                        <option value="4">4. 고등학교 교육</option>
+                    </select>
+                </div><br><br><br>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <h4>아버지에게 공부를 언제까지 배웠나요?</h4>
+                    <select name="Fedu" size="3">
+                        <option value="0">0. 없음</option>
+                        <option value="1">1. 초등학교 교욱 1~4학년</option>
+                        <option value="2">2. 초등학교 교육 5~6학년</option>
+                        <option value="3">3. 중학교 교육</option>
+                        <option value="4">4. 고등학교 교육</option>
+                    </select>
+                </div><br><br><br>
+                <br>
+                <hr>
+                <br>
+                <h4>공부 시간이 얼마나 되나요?</h4>
+                <input type="text" id="study" name="study" placeholder="공부 시간 (1~10)"/><br>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <h4>추가 교육 지원이 있나요?</h4>
+                    <label>예 (1)</label>
+                    <input type="radio" name="sch" value="1">
+                    <label>아니요 (0)</label>
+                    <input type="radio" name="sch" value="0">
+                </div><br><br><br>
+                <br>
+                <hr>
+                <br>
+                <h4>회원가입 버튼</h4>
+                <button type="submit" value="signup">회원가입</button>
+                <br>
+                <hr>
+                <br>
+            </form>
+            <p class="message">계정이 이미 있으신가요? <a href="http:/127.0.0.1:500/mach1">로그인하기</a></p>
+        </div>
+    </div>
+    <br><br><br>
+</body>
+</html>

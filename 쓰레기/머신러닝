@@ -1,0 +1,20 @@
+import json
+from collections import OrderedDict
+import pprint
+
+f=open("감정데이터.json",'rt', encoding='UTF8').read()
+data = json.loads(f)
+
+x_data=[]
+y_data=[]
+
+for i in range(len(data)):
+    x_data.append([data[i]["word"]])
+    y_data.append([data[i]["polarity"]])
+
+from gensim.models import Word2Vec
+
+model = Word2Vec(sentences=x_data, vector_size = 100, window=5,min_count=5,  workers=4, sg=0)
+
+
+model.wv.most_similar("가난")

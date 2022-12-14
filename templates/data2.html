@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>조회</title>
+        <link rel="stylesheet" href="#">
+    </head>
+    <body>
+        <br><br><br><br><br><br>
+        <h1>{{nametable}}조회</h1>
+        <table border="1" width="800">
+            <tr>
+                <td>순위</td>
+                <td>노래 제목</td>
+                <td>가수</td>
+                <td>앨범</td>
+                <td>유튜브 노래 이동</td>
+                <td>유튜브 가수 이동</td>
+            </tr>
+            {% for row in rows %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td><a href={{row[4]}}>{{row[4]}}</a></td>
+                <td><a href={{row[5]}}>{{row[5]}}</a></td>
+            </tr>
+            {% endfor%}
+        </table>
+    </body>
+</html>

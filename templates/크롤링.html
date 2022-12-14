@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="#">
+    <style>
+        .regi-page {
+        width: 360px;
+        padding: 8% 0 0;
+        margin: auto;
+        }
+        .regibox {
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+        .form input {
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        }
+        .form button {
+        text-transform: uppercase;
+        outline: 0;
+        background: #4CAF50;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        }
+        .form button:hover,.form button:active,.form button:focus {
+        background: #43A047;
+        }
+        .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+        }
+        .message a {
+        color: #4CAF50;
+        text-decoration: none;
+        }
+        .register-form {
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <div class="regibox" align="center">
+        <h2>사이트 입력</h2>
+        <div class="regi-page" style="padding-top: 20px;">
+            
+            <form class="form" method="POST" action="/melon1">
+                <input type="text" id="id" name="id" placeholder="사이트" /><br>
+                <br><br>
+                <button type="submit" value="login1">submit</button>
+            </form>
+            <br><br>
+            <p class="message">기존 멜론 TOP 100을 볼까요?<a href="/melon11">기존 데이터 보기</a></p>
+        
+        </div>
+    </div>
+    <br><br><br>
+</body>
+</html>

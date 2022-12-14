@@ -1,0 +1,45 @@
+웹 크롤링
+flask
+sqlite3
+html 데이베이스 연동
+numpy
+파이토치
+딥러닝
+소켓
+스레드
+
+-------------------
+
+소켓 
+
+파이토치 - > 넘파이 (이미지, 텍스트)
+
+소켓 - > 스레드
+
+flask - > html
+
+웹크롤링
+
+판다스
+
+
+
+-------
+1. 감정
+
+
+https://movie.naver.com/movie/bi/mi/basic.naver?code=222301
+
+
+https://movie.naver.com/movie/bi/mi/pointWriteFormList.naver?code=222301&type=after&isActualPointWriteExecute=false&isMileageSubscriptionAlready=false&isMileageSubscriptionReject=false&page=1
+
+
+
+
+
+웹 크롤링 : 
+
+https://blog.yhs.kr/44   /// select
+
+
+https://codechacha.com/ko/python-remove-char-in-string/  ///  특정 문자 제거

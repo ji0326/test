@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>합격률</title>
+        <link rel="stylesheet" href="#">
+        <style>
+            .regibox {
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            max-width: 600px;
+            margin: 0 auto 100px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            }
+        </style>
+    </head>
+    <body>
+        <br><br><br><br><br><br>
+        
+        <div class="regibox" align="center">
+            <h1>{{play_name}}의 합격률</h1>
+            <div class="regi-page" style="padding-top: 20px;">
+                <h2>선형 회귀분석 모델 합격률</h2>
+                <h3>{{play_data1}}</h3>              
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="regi-page" style="padding-top: 20px;">
+                <h2>인공 신경망 합격률</h2>
+                <h3>{{play_data2}}</h3>              
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
